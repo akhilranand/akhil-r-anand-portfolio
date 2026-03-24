@@ -1,8 +1,8 @@
-# 🤖 Akhil R Anand – Portfolio
+Akhil R Anand – Portfolio
 
 Robotics & Automation graduate building skills in C++, Python, and embedded systems,ROS2 , with a background in software development.
 
-## 🚀 Focus
+ Focus
 
 * C++
 * Python
