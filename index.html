@@ -3,51 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhil Portfolio</title>
-
-    <!-- CSS Link -->
+    <title>Akhil R Anand | Robotics & AI</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Akhil R Anand</h1>
-        <p>Robotics Enthusiast | Developer</p>
-    </header>
-
-    <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">ARA<span>.</span></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="mono-text">Initializing transition...</p>
+            <h1>Akhil R Anand</h1>
+            <h2>Robotics Engineer <span class="accent">&</span> AI Developer</h2>
+            <p class="tagline">Bridging the gap between software and the physical world.</p>
+            <a href="#projects" class="btn">View My Systems</a>
+        </div>
+    </header>
 
+    <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am transitioning from web development to robotics.</p>
+            <div class="container">
+                <h2>01. About Me</h2>
+                <div class="about-grid">
+                    <p>I’m a developer shifting from high-level web architecture to the intricate world of <strong>Robotics</strong>. My focus lies at the intersection of <strong>ROS2, Computer Vision, and Hardware Integration</strong>. I build intelligent machines that perceive and interact with their environment.</p>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <p>Coming soon...</p>
+            <div class="container">
+                <h2>02. Projects</h2>
+                <div class="project-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Autonomous Navigation Bot</h3>
+                            <p>Implemented SLAM and LiDAR integration using ROS2 Humble.</p>
+                            <span class="tech-tag">C++</span> <span class="tech-tag">ROS2</span> <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Future System...</h3>
+                            <p>Currently training a computer vision model for object manipulation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section id="contact">
+            <div class="container">
+                <h2>03. Get In Touch</h2>
+                <p>Have a project or a robot that needs a brain?</p>
+                <a href="" class="btn-outline">Email Me</a>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Akhil R Anand</p>
+        <p>© 2026 Built by Akhil R Anand | System Status: <span class="online">Online</span></p>
     </footer>
 
-    <!-- JS Link -->
     <script src="js/script.js"></script>
-
 </body>
 </html>
