@@ -88,10 +88,72 @@ nav ul li a:hover { color: var(--accent); }
 
 h1 { font-size: 4rem; margin-bottom: 10px; }
 h2 { font-size: 2rem; color: var(--text-dim); margin-bottom: 20px; }
-.accent { color: var(--accent); }
+
+/* About Section */
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 3;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--text-dim);
+}
+
+.about-image {
+    flex: 2;
+    max-width: 300px;
+    width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    background-color: var(--accent);
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+   
+    /* mix-blend-mode: multiply; */
+    transition: 0.3s;
+}
+
+.image-wrapper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.image-wrapper:hover img {
+    filter: none;
+    mix-blend-mode: normal;
+}
+
+.image-wrapper:hover::after {
+    top: 15px;
+    left: 15px;
+}
 
 /* Buttons */
-.btn {
+.btn, .btn-outline {
     display: inline-block;
     padding: 15px 30px;
     border: 1px solid var(--accent);
@@ -100,9 +162,10 @@ h2 { font-size: 2rem; color: var(--text-dim); margin-bottom: 20px; }
     border-radius: 4px;
     margin-top: 30px;
     transition: 0.3s;
+    font-family: var(--font-mono);
 }
 
-.btn:hover { background: rgba(100, 255, 218, 0.1); }
+.btn:hover, .btn-outline:hover { background: rgba(100, 255, 218, 0.1); }
 
 /* Project Cards */
 .project-grid {
@@ -131,9 +194,25 @@ h2 { font-size: 2rem; color: var(--text-dim); margin-bottom: 20px; }
     margin-right: 10px;
 }
 
-/* Sections */
+/* Section Headings */
 section { padding: 100px 0; }
-h2 { color: var(--text-main); margin-bottom: 30px; }
+.section-heading { 
+    display: flex;
+    align-items: center;
+    color: var(--text-main); 
+    margin-bottom: 40px; 
+    font-size: 1.8rem;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--bg-light);
+}
 
 /* Footer */
 footer {
@@ -145,3 +224,10 @@ footer {
 }
 
 .online { color: #50fa7b; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-flex { flex-direction: column; align-items: center; }
+    h1 { font-size: 2.5rem; }
+    .about-image { margin-top: 50px; max-width: 80%; }
+}
