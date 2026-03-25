@@ -471,28 +471,32 @@ section {
 /* Projects Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr; /* Default mobile: 1 column */
     gap: 30px;
     width: 100%;
-    justify-content: center;
-    margin: 0 20px;
+    /* Removed max-width: 300px to allow the grid to actually grow */
+    max-width: 1200px; 
+    margin: 0 auto; /* Standard centering */
 }
 
-@media (min-width: 480px) {
+/* Small tablets / Large phones */
+@media (min-width: 600px) {
     .project-grid {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 768px) {
+/* Desktop */
+@media (min-width: 900px) {
     .project-grid {
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 1024px) {
+/* Extra Large Screens */
+@media (min-width: 1400px) {
     .project-grid {
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
