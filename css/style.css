@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -471,9 +471,36 @@ section {
 /* Projects Section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 20px;
 }
+
+@media (min-width: 480px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+    }
+}
+
+/* @media (min-width: 1400px) {
+    .project-grid {
+        grid-template-columns: repeat(4, minmax(280px, 1fr));
+    }
+} */
 
 .card {
     background: var(--bg-light);
