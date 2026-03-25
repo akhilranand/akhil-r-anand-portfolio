@@ -998,6 +998,65 @@ footer {
     }
 }
 
+
+
+
+
+@media (max-width: 768px) {
+    .about-flex {
+        display: grid; /* Ensure grid is active */
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-image-column {
+        order: -1;
+        margin: 0 auto 40px auto; /* Centering the column itself */
+        max-width: 100%;
+        display: flex;
+        justify-content: center; /* Centers content inside the column */
+    }
+
+    .skills-list {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Standardized image centering for all sections */
+    section img, 
+    .about-image-column img, 
+    #demo img {
+        display: block;       /* Required for margin: auto to work */
+        margin-left: auto;    /* Pushes from left */
+        margin-right: auto;   /* Pushes from right */
+        max-width: 100% !important;
+        height: auto;         /* Maintains aspect ratio */
+    }
+
+    /* Mobile back button */
+    .mobile-back-btn {
+        display: block;
+        padding: 90px 0 20px 0;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .mobile-back-btn a {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: var(--font-mono);
+        font-size: 0.95rem;
+        transition: 0.3s;
+        display: inline-block;
+    }
+
+    .mobile-back-btn a:hover {
+        transform: translateX(-3px);
+    }
+}
+
 @media (max-width: 480px) {
     .mobile-back-btn {
         padding: 90px 0 15px 0;
@@ -1008,17 +1067,13 @@ footer {
         padding: 10px 15px;
         border: 1px solid rgba(100, 255, 218, 0.3);
         border-radius: 4px;
-        display: inline-block;
     }
 
-    /* More aggressive mobile image sizing */
-    section img {
-        max-width: 100% !important;
-        width: calc(100% - 20px) !important;
-    }
-
+    /* Aggressive mobile centering */
+    section img, 
     #demo img {
-        max-width: calc(100% - 20px) !important;
-        margin: 0 10px;
+        width: calc(100% - 20px) !important; /* Creates the 10px gutter on each side */
+        margin: 0 auto !important;           /* Forces the calculated space to be equal on both sides */
+        display: block;
     }
 }
