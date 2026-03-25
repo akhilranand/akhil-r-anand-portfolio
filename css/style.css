@@ -67,6 +67,7 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 0.2rem;
+    white-space: nowrap;
 }
 
 .blink-underscore {
@@ -75,6 +76,9 @@ nav {
     color: var(--accent);
     margin-left: 2px;
     font-size: inherit;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .section-heading .blink-underscore {
@@ -349,8 +353,10 @@ section {
 }
 
 .section-heading {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 0.25rem;
     font-size: 1.8rem;
     margin-bottom: 40px;
     color: var(--text-main);
@@ -359,6 +365,7 @@ section {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
+    white-space: normal;
 }
 
 .section-heading:hover {
