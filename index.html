@@ -4,98 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akhil R Anand | Robotics Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <div class="logo">ARA<span>.</span></div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">ARA<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="#projects"><span class="nav-num">02.</span> Projects</a></li>
+                <li><a href="#contact"><span class="nav-num">03.</span> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
+        <div class="container hero-content">
             <p class="mono-text">Building robots that perceive, decide, and act in the real world...</p>
-            <h1>Akhil R Anand</h1>
-            <h2>Robotics Engineer</h2>
-            <p class="tagline">Building intelligent autonomous systems with software and hardware integration.</p>
-            <a href="#projects" class="btn">View My Systems</a>
+            <h1 class="hero-title">Akhil R Anand<span>.</span></h1>
+            <h2 class="hero-subtitle">Robotics Engineer</h2>
+            <p class="hero-tagline">
+               Building the future of Autonomy.
+            </p>
+            <div class="hero-action">
+                <a href="#projects" class="btn">Explore My Systems</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="reveal">
             <div class="container">
                 <h2 class="section-heading">01. About Me</h2>
                 <div class="about-flex">
                     <div class="about-text">
-                        <p>I hold a B.Tech in <strong>Robotics and Automation</strong> and have professional experience as a software developer. I am now applying my programming skills to the development of intelligent and autonomous systems using <strong>ROS2, C++, Python, Gazebo simulations, and hardware integration</strong>.</p>
-                        <p>I enjoy building robots that perceive, decide, and act in the real world.</p>
+                        <p>I hold a B.Tech in <strong>Robotics and Automation</strong>. With professional experience in software development, I specialize in building autonomous systems using <strong>ROS 2, C++, and Python</strong>.</p>
+                        <p>Current Tech Stack:</p>
+                        <ul class="skills-list">
+                            <li>ROS 2 (Humble/Foxy)</li>
+                            <li>Modern C++ (17/20)</li>
+                            <li>Python & OpenCV</li>
+                            <li>Gazebo & Navigation2</li>
+                            <li>Microcontrollers (ESP32)</li>
+                            <li>React & Angular</li>
+                        </ul>
                     </div>
-                    <div class="about-image">
+                    <div class="about-image-column">
                         <div class="image-wrapper">
-                            <img src="assets/akhilpic.jpeg" alt="Akhil R Anand">
+                            <img src="assets/akhilpic.jpg" alt="Akhil R Anand">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ----------projects---------- -->
-
-<section id="projects">
-    <div class="container">
-        <h2 class="section-heading">02. Projects</h2>
-        <div class="project-grid">
-            
-            <div class="card">
-                <img src="assets/automaticHandSanitizerDispencer.png" alt="automaticHandSanitizerDispencer" class="project-image">
-                <div class="card-content">
-                    <h3>Automatic Hand Sanitizer Dispencer</h3>
-                    <p>A small, touchless device that uses an ultrasonic sensor to detect when a hand is placed underneath. When detected, it automatically activates a motor or pump to dispense the sanitizer, promoting hygiene and preventing the spread of germs.</p>
-                    <a href="#" class="btn-outline">Click to Know More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/dinoGameAutomation.png" alt="Dino Game Automation" class="project-image">
-                <div class="card-content">
-                    <h3>Dino Game Automation</h3>
-                    <p>A setup where a sensor (like an LDR) detects visual cues from the screen and triggers a servo to “jump” in the Chrome Dino game automatically, allowing hands-free gameplay.</p>
-                    <a href="#" class="btn-outline">Click to Know More</a>
-                </div>
-            </div>
-
-           
-
-
-        </div>
-    </div>
-</section>
-
-<!-- ----------/projects---------- -->
-
-        <section id="contact">
+        <section id="projects">
             <div class="container">
-                <h2 class="section-heading">03. Get In Touch</h2>
-                <p>Looking for a robotics developer or collaborator? Let’s build intelligent machines together.</p>
-                <a href="mailto:akhil.r.anand@example.com" class="btn-outline">Email Me</a>
+                <h2 class="section-heading reveal">02. Selected Projects</h2>
+                <div class="project-grid">
+                    <div class="card reveal">
+                        <div class="image-container">
+                            <img src="assets/automaticHandSanitizerDispencer.png" alt="Sanitizer" class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">Sensors</span>
+                            </div>
+                            <h3>Touchless Sanitizer System</h3>
+                            <p>Automated hygiene solution utilizing ultrasonic sensors and motor control for zero-contact dispensing.</p>
+                            <a href="#" class="btn-outline">View Docs</a>
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="image-container">
+                            <img src="assets/dinoGameAutomation.png" alt="Dino Automation" class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <span class="tech-tag">LDR</span>
+                                <span class="tech-tag">Servos</span>
+                            </div>
+                            <h3>Dino Game Bot</h3>
+                            <p>Hardware-level automation using light-dependent resistors to trigger physical jump mechanisms.</p>
+                            <a href="#" class="btn-outline">View Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <div class="container ">
+                <h2 class="section-heading reveal">03. Get In Touch</h2>
+                
+                <p class="contact-desc">
+                    I’m currently looking for new opportunities in Robotics and Autonomy. 
+                    Whether you have a question or just want to discuss a potential project, 
+                    my inbox is always open!
+                </p>
+                <div class="contact-action">
+                    <a href="mailto:akhil.r.anand@example.com" class="btn large">Say Hello</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Built by Akhil R Anand | System Status: <span class="online">Online</span></p>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+        <div class="status">
+            <span class="online-dot"></span> <span>System Online</span>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>

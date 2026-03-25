@@ -1,6 +1,28 @@
-console.log("Portfolio Loaded");
+document.addEventListener('DOMContentLoaded', () => {
+    // Reveal on Scroll logic
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.15 });
 
-// Example: simple interaction
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM fully loaded");
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth Scrolling for Navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
