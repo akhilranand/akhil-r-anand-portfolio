@@ -342,6 +342,14 @@ section {
     width: fit-content;
 }
 
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
 .btn:hover,
 .btn-outline:hover {
     background: rgba(100, 255, 218, 0.1);

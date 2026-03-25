@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Touchless Sanitizer System - Akhil R Anand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ARA<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="../../index.html#projects"><span class="nav-num">01.</span> Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="mono-text">Hygiene Automation</p>
+            <h1 class="hero-title">Touchless<span>.</span><br>Sanitizer System</h1>
+            <h2 class="hero-subtitle">Zero-Contact Dispensing</h2>
+            <p class="hero-tagline">
+                Automated hand sanitizer dispenser using ultrasonic distance sensing and precise motor control for touch-free operation.
+            </p>
+            <div class="hero-action">
+                <a href="#" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Project Overview</h2>
+                <p class="contact-desc" style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
+                    Developed during COVID-19 to provide reliable touchless sanitization. Detects hand proximity and dispenses exact sanitizer amount using servo-controlled pump.
+                </p>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Key Features</h2>
+                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>Ultrasonic sensor (HC-SR04) for 5-20cm hand detection</li>
+                    <li>Precise servo motor (SG90) pump control</li>
+                    <li>Adjustable dispense volume via potentiometer</li>
+                    <li>Low sanitizer level indicator with buzzer</li>
+                    <li>Battery-powered portable design</li>
+                    <li>Zero-touch operation (<1s response)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="demo" class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Demo</h2>
+                <div style="text-align: center;">
+                    <img src="../../assets/automaticHandSanitizerDispencer.png" alt="Sanitizer Demo" style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">Hand approaches → Ultrasonic trigger → Servo dispenses → Ready for next use</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack</h2>
+                <div class="about-flex">
+                    <ul class="skills-list">
+                        <li>Arduino Uno R3</li>
+                        <li>HC-SR04 Ultrasonic Sensor</li>
+                        <li>SG90 Micro Servo</li>
+                        <li>10kΩ Potentiometer</li>
+                        <li>Active Buzzer</li>
+                        <li>9V Battery + Voltage Regulator</li>
+                    </ul>
+                    <div class="about-image-column" style="justify-self: end;">
+                        <div class="image-wrapper">
+                            <img src="../../assets/automaticHandSanitizerDispencer.png" alt="Sanitizer Hardware">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2 class="section-heading">Resources</h2>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="../../index.html#projects" class="btn">← Back to Projects</a>
+                        <a href="#" class="btn-outline">GitHub Repo</a>
+                        <a href="#" class="btn-outline">Schematic PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
 </body>
 </html>

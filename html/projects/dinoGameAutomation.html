@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dino Game Bot - Akhil R Anand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ARA<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="../../index.html#projects"><span class="nav-num">01.</span> Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="mono-text">Game Automation</p>
+            <h1 class="hero-title">Dino<span>.</span><br>Game Bot</h1>
+            <h2 class="hero-subtitle">Hardware Automation</h2>
+            <p class="hero-tagline">
+                Physical automation of Chrome's offline Dino game using LDR sensors for obstacle detection and servo motors for jump mechanics.
+            </p>
+            <div class="hero-action">
+                <a href="#" class="btn">Watch Replay</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Project Overview</h2>
+                <p class="contact-desc" style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
+                    Hardware bot that plays Chrome Dino game autonomously. LDR sensors detect shadow of approaching cacti/birds, triggering physical servo press on spacebar.
+                </p>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Key Features</h2>
+                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>2x LDR sensors for obstacle shadow detection</li>
+                    <li>High-torque servo for reliable spacebar press</li>
+                    <li>Real-time light intensity thresholding</li>
+                    <li>Configurable sensitivity via analog read</li>
+                    <li>Unlimited gameplay (perfect score)</li>
+                    <li>Compact 3D-printed enclosure</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="demo" class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Demo</h2>
+                <div style="text-align: center;">
+                    <img src="../../assets/dinoGameAutomation.png" alt="Dino Bot Demo" style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">Obstacle shadow detected → LDR triggers → Servo jumps → Dino survives indefinitely</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack</h2>
+                <div class="about-flex">
+                    <ul class="skills-list">
+                        <li>Arduino Nano</li>
+                        <li>2x Light Dependent Resistors (LDR)</li>
+                        <li>MG996R High-Torque Servo</li>
+                        <li>10kΩ Resistors (voltage divider)</li>
+                        <li>3D-printed mechanical linkage</li>
+                        <li>USB power from PC</li>
+                    </ul>
+                    <div class="about-image-column" style="justify-self: end;">
+                        <div class="image-wrapper">
+                            <img src="../../assets/dinoGameAutomation.png" alt="Dino Bot Hardware">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2 class="section-heading">Resources</h2>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="../../index.html#projects" class="btn">← Back to Projects</a>
+                        <a href="#" class="btn-outline">GitHub Repo</a>
+                        <a href="#" class="btn-outline">3D Models</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
 </body>
 </html>
