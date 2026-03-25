@@ -62,5 +62,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Minimal fire spark pointer trail effect
+    const sparkContainer = document.createElement('div');
+    sparkContainer.className = 'mouse-spark-container';
+    document.body.appendChild(sparkContainer);
+
+    const maxSparks = 20;
+    document.addEventListener('mousemove', (e) => {
+        const spark = document.createElement('span');
+        spark.className = 'mouse-spark';
+
+        const size = Math.floor(Math.random() * 4) + 2;
+        const xOffset = Math.random() * 8 - 4;
+        const yOffset = Math.random() * 8 - 4;
+
+        spark.style.width = `${size}px`;
+        spark.style.height = `${size}px`;
+        spark.style.left = `${e.clientX + xOffset}px`;
+        spark.style.top = `${e.clientY + yOffset}px`;
+        spark.style.animationDuration = `${Math.random() * 0.15 + 0.35}s`;
+
+        sparkContainer.appendChild(spark);
+
+        if (sparkContainer.childElementCount > maxSparks) {
+            sparkContainer.removeChild(sparkContainer.firstChild);
+        }
+
+        spark.addEventListener('animationend', () => {
+            if (spark.parentElement) spark.parentElement.removeChild(spark);
+        });
+    });
 });
 
