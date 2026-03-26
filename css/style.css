@@ -3,8 +3,8 @@
     --bg-light: #112240;
     --bg-hover: #233554;
     --accent: #64ffda;
-    --text-main: #ccd6f6;
-    --text-dim: #8892b0;
+    --text-main: #e6f3ff;
+    --text-dim: #b1c1dd;
     --font-sans: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 }
@@ -24,7 +24,8 @@ body {
     background-color: var(--bg);
     color: var(--text-main);
     font-family: var(--font-sans);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-weight: 500;
     overflow-x: hidden;
 }
 
@@ -78,7 +79,7 @@ nav {
 
 .blink-underscore {
     font-family: var(--font-mono);
-    animation: blink-cursor 0.8s steps(2, start) infinite;
+    animation: blink-cursor 0.8s steps(10, start) infinite;
     color: var(--accent);
     margin-left: 2px;
     font-size: inherit;
@@ -320,6 +321,8 @@ nav {
 .hero-title {
     font-size: clamp(40px, 8vw, 80px);
     line-height: 1.1;
+    font-weight: 700;
+    text-shadow: 0 0 12px rgba(255,255,255,0.2);
     animation-delay: 0.4s;
 }
 
@@ -363,7 +366,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     gap: 0.25rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 40px;
     color: var(--text-main);
     transition: all 0.3s ease;
@@ -372,6 +375,7 @@ section {
     cursor: pointer;
     position: relative;
     white-space: normal;
+    font-weight: 700;
 }
 
 .section-heading:hover {
@@ -410,7 +414,8 @@ section {
     list-style: none;
     margin-top: 25px;
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    color: var(--text-main);
 }
 
 .skills-list li::before {
@@ -1076,4 +1081,20 @@ footer {
         margin: 0 auto !important;           /* Forces the calculated space to be equal on both sides */
         display: block;
     }
+}
+
+.linkClick {
+    color: #79f415;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.linkClick:hover {
+    color: #ee7e06;
+    text-decoration: underline;
+}
+
+.linkClick:active {
+    opacity: 0.8;
 }
