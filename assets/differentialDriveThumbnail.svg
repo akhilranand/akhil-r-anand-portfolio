@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Differential Drive Robot Simulation</title>
+  <desc id="desc">A differential drive robot explores a simulated room using LiDAR and ROS 2.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c3b"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+    <radialGradient id="glow">
+      <stop stop-color="#67e8f9" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <rect width="1000" height="600" fill="url(#grid)"/>
+  <circle cx="500" cy="290" r="240" fill="url(#glow)"/>
+  <g fill="none" stroke="#67e8f9" stroke-linejoin="round">
+    <path d="M255 165h185v85h105v-70h200v125h-75v115H535v-65H405v75H255z"
+      stroke-width="7" stroke-opacity=".55"/>
+    <path d="M280 190h135v85h105v-70h175v75h-75v110H560v-65H380v75H280z"
+      stroke-width="2" stroke-opacity=".22"/>
+  </g>
+  <g stroke="#67e8f9" stroke-opacity=".35" stroke-width="3">
+    <path d="M500 315L375 205M500 315L625 195M500 315L700 285M500 315L610 390M500 315L385 410"/>
+  </g>
+  <g fill="#a5f3fc">
+    <circle cx="375" cy="205" r="5"/><circle cx="625" cy="195" r="5"/>
+    <circle cx="700" cy="285" r="5"/><circle cx="610" cy="390" r="5"/>
+    <circle cx="385" cy="410" r="5"/>
+  </g>
+  <g transform="translate(500 315)">
+    <rect x="-67" y="-48" width="134" height="96" rx="24" fill="#123545" stroke="#67e8f9" stroke-width="5"/>
+    <rect x="-83" y="-34" width="18" height="68" rx="8" fill="#67e8f9"/>
+    <rect x="65" y="-34" width="18" height="68" rx="8" fill="#67e8f9"/>
+    <circle cx="0" cy="-10" r="13" fill="#67e8f9" fill-opacity=".85"/>
+    <path d="M0-10l22-22" stroke="#edf7ff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-25 24h50" stroke="#67e8f9" stroke-opacity=".7" stroke-width="4"/>
+  </g>
+  <text x="500" y="505" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
+    font-size="35" font-weight="700" letter-spacing="3">MOBILE ROBOT SIM</text>
+  <text x="500" y="540" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace"
+    font-size="18" letter-spacing="4">GAZEBO · LIDAR · SLAM TOOLBOX</text>
+</svg>

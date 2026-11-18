@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Google Cartographer 2D SLAM</title>
+  <desc id="desc">A LiDAR-equipped mobile robot maps a room using Google Cartographer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c3b"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+    <radialGradient id="glow">
+      <stop stop-color="#67e8f9" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <rect width="1000" height="600" fill="url(#grid)"/>
+  <circle cx="500" cy="292" r="220" fill="url(#glow)"/>
+  <g fill="none" stroke="#67e8f9" stroke-linejoin="round">
+    <path d="M205 145h175v75h120v-50h270v130h-90v115H560v-65H390v80H205z"
+      stroke-width="8" stroke-opacity=".7"/>
+    <path d="M225 165h135v75h120v-50h250v90h-90v115H580v-65H370v80H225z"
+      stroke-width="3" stroke-opacity=".28"/>
+    <path d="M280 195v90h75m290-55v55h-70m-275 95h95v-50h90"
+      stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round"/>
+  </g>
+  <g stroke="#67e8f9" stroke-opacity=".3" stroke-width="3">
+    <path d="M500 308L330 180M500 308L680 185M500 308L720 290M500 308L620 400M500 308L360 390"/>
+  </g>
+  <g fill="#a5f3fc">
+    <circle cx="330" cy="180" r="5"/><circle cx="680" cy="185" r="5"/>
+    <circle cx="720" cy="290" r="5"/><circle cx="620" cy="400" r="5"/>
+    <circle cx="360" cy="390" r="5"/>
+  </g>
+  <circle cx="500" cy="308" r="63" fill="#071923" stroke="#67e8f9" stroke-width="4"/>
+  <circle cx="500" cy="308" r="45" fill="#123545" stroke="#67e8f9" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M500 277l-23 42 23 14 23-14z" fill="#67e8f9"/>
+  <circle cx="500" cy="308" r="8" fill="#edf7ff"/>
+  <text x="500" y="505" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
+    font-size="35" font-weight="700" letter-spacing="3">2D SLAM</text>
+  <text x="500" y="540" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace"
+    font-size="18" letter-spacing="4">CARTOGRAPHER · ROS 2</text>
+</svg>

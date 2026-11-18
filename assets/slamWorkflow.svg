@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">2D SLAM project workflow</title>
+  <desc id="desc">LiDAR scan data flows into ROS 2 and Google Cartographer to generate a 2D occupancy map visualized in RViz2.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11242e"/>
+      <stop offset="1" stop-color="#07131c"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163441"/>
+      <stop offset="1" stop-color="#0b1c25"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5 0 10z" fill="#67e8f9"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#67e8f9" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="420" rx="24" fill="url(#background)"/>
+  <rect width="1000" height="420" rx="24" fill="url(#grid)"/>
+  <text x="54" y="58" fill="#edf7ff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">2D Mapping Pipeline</text>
+  <text x="54" y="88" fill="#aac4d4" font-family="JetBrains Mono,monospace" font-size="14">ROS 2 HUMBLE · GOOGLE CARTOGRAPHER</text>
+
+  <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+    <rect x="55" y="145" width="190" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <circle cx="150" cy="195" r="28" fill="#67e8f9" fill-opacity=".12" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M150 167V223M122 195H178M130 175L170 215M170 175L130 215" stroke="#67e8f9" stroke-opacity=".8"/>
+    <text x="150" y="250" fill="#edf7ff" font-size="18" font-weight="600">LiDAR</text>
+    <text x="150" y="275" fill="#aac4d4" font-size="13">Laser scan data</text>
+
+    <rect x="300" y="145" width="170" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <circle cx="385" cy="195" r="28" fill="#67e8f9" fill-opacity=".12" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M368 190h34M368 200h34M385 177v36" stroke="#67e8f9" stroke-width="2"/>
+    <text x="385" y="250" fill="#edf7ff" font-size="18" font-weight="600">ROS 2</text>
+    <text x="385" y="275" fill="#aac4d4" font-size="13">Topics and TF</text>
+
+    <rect x="525" y="145" width="200" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <path d="M585 204a40 40 0 1 1 67 29M650 229l4-22 20 9" fill="none" stroke="#67e8f9" stroke-width="3"/>
+    <text x="625" y="250" fill="#edf7ff" font-size="18" font-weight="600">Cartographer</text>
+    <text x="625" y="275" fill="#aac4d4" font-size="13">SLAM and localization</text>
+
+    <rect x="780" y="145" width="165" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <path d="M820 174h85v46h-85z" fill="url(#grid)" stroke="#67e8f9" stroke-opacity=".7"/>
+    <path d="M834 185h10v10h-10zm22 0h10v10h-10zm22 0h10v10h-10zm-33 20h10v10h-10zm22 0h10v10h-10z" fill="#67e8f9" fill-opacity=".75"/>
+    <text x="862" y="250" fill="#edf7ff" font-size="18" font-weight="600">2D Map</text>
+    <text x="862" y="275" fill="#aac4d4" font-size="13">RViz2 / occupancy grid</text>
+  </g>
+  <g fill="none" stroke="#67e8f9" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M250 220h38"/>
+    <path d="M475 220h38"/>
+    <path d="M730 220h38"/>
+  </g>
+</svg>

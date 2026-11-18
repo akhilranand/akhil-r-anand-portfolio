@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akhil R Anand's 2D SLAM project using Google Cartographer, LiDAR, and ROS 2 Humble.">
+    <title>2D SLAM with Cartographer - Akhil R Anand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a class="logo" href="../../index.html">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back to Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="mono-text">Mapping and Localization · ROS 2</p>
+            <h1 class="hero-title">2D SLAM<span>.</span></h1>
+            <h2 class="hero-subtitle">Google Cartographer with ROS 2 Humble</h2>
+            <p class="hero-tagline">
+                A mobile robot builds a map of an unknown environment while estimating its position from LiDAR data.
+            </p>
+            <div class="hero-action">
+                <a href="#project-overview" class="btn down-btn" aria-label="Scroll to project overview">↓</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal" id="project-overview">
+            <div class="container">
+                <h2 class="section-heading">Project Overview<span class="blink-underscore">_</span></h2>
+                <p class="contact-desc" style="text-align: center; max-width: 850px; margin: 0 auto;">
+                    This project explores simultaneous localization and mapping (SLAM) with Google Cartographer and
+                    ROS 2 Humble. LiDAR readings help create a 2D map as the robot estimates its position in the
+                    environment. The workflow includes configuring Cartographer, integrating sensor data, handling
+                    ROS 2 TF frames, visualizing the map in RViz2, and generating an occupancy grid map.
+                </p>
+                <div style="text-align: center; margin-top: 40px;">
+                    <img src="../../assets/slamWorkflow.svg" alt="Project workflow: LiDAR data is processed by Google Cartographer in ROS 2 to build a 2D map for RViz2."
+                        style="max-width: 850px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">
+                        LiDAR scans → Cartographer SLAM → 2D occupancy map
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Key Features<span class="blink-underscore">_</span></h2>
+                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>2D SLAM using Google Cartographer</li>
+                    <li>Real-time map generation from LiDAR data</li>
+                    <li>Robot localization and ROS 2 TF integration</li>
+                    <li>RViz2 visualization of mapping data</li>
+                    <li>Generate and save occupancy grid maps</li>
+                    <li>Custom Cartographer configuration using Lua</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack<span class="blink-underscore">_</span></h2>
+                <div class="about-flex">
+                    <ul class="skills-list">
+                        <li>Ubuntu 22.04</li>
+                        <li>ROS 2 Humble</li>
+                        <li>Google Cartographer</li>
+                        <li>RViz2</li>
+                        <li>LiDAR</li>
+                        <li>Python and Lua</li>
+                    </ul>
+                    <div class="about-image-column" style="justify-self: end;">
+                        <div class="image-wrapper">
+                            <img src="../../assets/slamWorkflow.svg" alt="LiDAR, ROS 2, Cartographer, and RViz2 project components">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Resources<span class="blink-underscore">_</span></h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/akhilranand/slam_using_cartographer" target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
+                    <a href="https://lnkd.in/p/g2mVwHQB" target="_blank" rel="noopener noreferrer" class="btn-outline">LinkedIn Post</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

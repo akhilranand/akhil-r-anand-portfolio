@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Gesture-Controlled TurtleSim</title>
+  <desc id="desc">A hand gesture controls a turtle robot in ROS 2 TurtleSim.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c3b"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+    <radialGradient id="glow">
+      <stop stop-color="#67e8f9" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <rect width="1000" height="600" fill="url(#grid)"/>
+  <circle cx="500" cy="290" r="250" fill="url(#glow)"/>
+  <path d="M250 315c-27-36-35-72-15-86 21-14 40 22 58 45l-1-110c0-25 34-28 37-2l8 79 3-99c1-26 36-26 37 1l2 95 8-76c3-25 36-21 36 5l-1 93 13-57c6-25 39-16 34 10l-18 105c-12 69-54 106-114 103-45-2-65-43-87-106z"
+    fill="#123545" stroke="#67e8f9" stroke-width="7" stroke-linejoin="round"/>
+  <g fill="#67e8f9">
+    <circle cx="318" cy="170" r="6"/><circle cx="377" cy="164" r="6"/>
+    <circle cx="435" cy="190" r="6"/><circle cx="493" cy="224" r="6"/>
+    <circle cx="287" cy="250" r="6"/><circle cx="344" cy="260" r="6"/>
+    <circle cx="401" cy="255" r="6"/><circle cx="458" cy="270" r="6"/>
+    <circle cx="500" cy="315" r="6"/>
+  </g>
+  <path d="M540 300c55-43 97-56 151-44" fill="none" stroke="#67e8f9" stroke-width="4"
+    stroke-dasharray="8 12" stroke-linecap="round"/>
+  <path d="M677 239l24 17-28 12" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="770" cy="300" r="79" fill="#071923" stroke="#67e8f9" stroke-width="4"/>
+  <path d="M770 240l-31 57 31 17 31-17z" fill="#67e8f9"/>
+  <circle cx="750" cy="309" r="6" fill="#edf7ff"/><circle cx="790" cy="309" r="6" fill="#edf7ff"/>
+  <path d="M730 344q40 27 80 0" fill="none" stroke="#67e8f9" stroke-width="5" stroke-linecap="round"/>
+  <text x="500" y="505" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
+    font-size="35" font-weight="700" letter-spacing="3">GESTURE CONTROL</text>
+  <text x="500" y="540" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace"
+    font-size="18" letter-spacing="4">OPENCV · MEDIAPIPE · ROS 2</text>
+</svg>

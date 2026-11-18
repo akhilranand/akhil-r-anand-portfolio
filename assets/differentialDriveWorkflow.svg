@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Differential drive robot simulation workflow</title>
+  <desc id="desc">A URDF and Xacro robot model is simulated in Gazebo with LiDAR and ROS 2, then SLAM Toolbox generates a 2D map.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11242e"/>
+      <stop offset="1" stop-color="#07131c"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163441"/>
+      <stop offset="1" stop-color="#0b1c25"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5 0 10z" fill="#67e8f9"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#67e8f9" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="420" rx="24" fill="url(#background)"/>
+  <rect width="1000" height="420" rx="24" fill="url(#grid)"/>
+  <text x="54" y="58" fill="#edf7ff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Mobile Robot Simulation Pipeline</text>
+  <text x="54" y="88" fill="#aac4d4" font-family="JetBrains Mono,monospace" font-size="14">ROS 2 HUMBLE · GAZEBO CLASSIC · SLAM TOOLBOX</text>
+
+  <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+    <rect x="45" y="145" width="200" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <path d="M107 183h74v42h-74z" fill="#67e8f9" fill-opacity=".1" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M119 179v-10h50v10M121 225v13m46-13v13" fill="none" stroke="#67e8f9" stroke-width="3"/>
+    <circle cx="124" cy="241" r="8" fill="#67e8f9" fill-opacity=".6"/>
+    <circle cx="164" cy="241" r="8" fill="#67e8f9" fill-opacity=".6"/>
+    <text x="145" y="268" fill="#edf7ff" font-size="18" font-weight="600">URDF / Xacro</text>
+    <text x="145" y="288" fill="#aac4d4" font-size="12">Robot model</text>
+
+    <rect x="290" y="145" width="200" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <path d="M325 224h130M340 224v-30h100v30M355 194v-18h70v18" fill="none" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M370 178l20-16 20 16" fill="none" stroke="#67e8f9" stroke-width="2"/>
+    <circle cx="353" cy="232" r="9" fill="#67e8f9" fill-opacity=".5"/>
+    <circle cx="427" cy="232" r="9" fill="#67e8f9" fill-opacity=".5"/>
+    <text x="390" y="268" fill="#edf7ff" font-size="18" font-weight="600">Gazebo Classic</text>
+    <text x="390" y="288" fill="#aac4d4" font-size="12">Robot and world simulation</text>
+
+    <rect x="535" y="145" width="200" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <circle cx="635" cy="198" r="10" fill="#67e8f9" fill-opacity=".3" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M635 188V164M645 198h25M625 198h-25M642 205l18 18M628 205l-18 18" stroke="#67e8f9" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M602 166a46 46 0 0 1 66 0M590 154a63 63 0 0 1 90 0" fill="none" stroke="#67e8f9" stroke-opacity=".55"/>
+    <text x="635" y="254" fill="#edf7ff" font-size="18" font-weight="600">LiDAR + ROS 2</text>
+    <text x="635" y="278" fill="#aac4d4" font-size="12">Scan and drive topics</text>
+
+    <rect x="780" y="145" width="175" height="150" rx="16" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".45"/>
+    <path d="M824 169h88v55h-88z" fill="url(#grid)" stroke="#67e8f9" stroke-opacity=".7"/>
+    <path d="M839 181h12v10h-12zm25 0h12v10h-12zm24 0h12v10h-12zm-37 23h12v10h-12zm25 0h12v10h-12z" fill="#67e8f9" fill-opacity=".75"/>
+    <text x="868" y="254" fill="#edf7ff" font-size="18" font-weight="600">SLAM Toolbox</text>
+    <text x="868" y="278" fill="#aac4d4" font-size="12">Mapping and map saving</text>
+  </g>
+  <g fill="none" stroke="#67e8f9" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M250 220h33"/>
+    <path d="M495 220h33"/>
+    <path d="M740 220h33"/>
+  </g>
+</svg>

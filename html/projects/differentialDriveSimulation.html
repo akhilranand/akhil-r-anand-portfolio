@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akhil R Anand's differential-drive robot simulation using ROS 2 Humble, URDF/Xacro, Gazebo Classic, LiDAR, and SLAM Toolbox.">
+    <title>Differential Drive Robot Simulation - Akhil R Anand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a class="logo" href="../../index.html">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back to Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="mono-text">Mobile Robotics · Simulation · Mapping</p>
+            <h1 class="hero-title">Differential Drive<span>.</span></h1>
+            <h2 class="hero-subtitle">Robot Simulation with ROS 2 and Gazebo</h2>
+            <p class="hero-tagline">
+                Model, simulate, and map an indoor environment with a LiDAR-equipped mobile robot.
+            </p>
+            <div class="hero-action">
+                <a href="#project-overview" class="btn down-btn" aria-label="Scroll to project overview">↓</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal" id="project-overview">
+            <div class="container">
+                <h2 class="section-heading">Project Overview<span class="blink-underscore">_</span></h2>
+                <p class="contact-desc" style="text-align: center; max-width: 850px; margin: 0 auto;">
+                    This project brings together a differential-drive robot model, a simulated environment, and
+                    mapping in ROS 2 Humble. The robot is described with URDF/Xacro, visualized in RViz2, and
+                    simulated in Gazebo Classic. A 2D LiDAR supplies scan data for SLAM Toolbox to build an
+                    occupancy map that can be saved for later use.
+                </p>
+                <div style="text-align: center; margin-top: 40px;">
+                    <img src="../../assets/differentialDriveWorkflow.svg"
+                        alt="Differential drive robot workflow: URDF/Xacro model in Gazebo with LiDAR, ROS 2, and SLAM Toolbox producing a map."
+                        style="max-width: 850px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">
+                        URDF/Xacro robot → Gazebo + LiDAR → SLAM Toolbox → 2D map
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Key Features<span class="blink-underscore">_</span></h2>
+                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>Differential-drive robot model using URDF/Xacro</li>
+                    <li>Robot visualization in RViz2</li>
+                    <li>Robot simulation in Gazebo Classic</li>
+                    <li>Differential drive plugin for robot movement</li>
+                    <li>2D LiDAR sensor integration</li>
+                    <li>SLAM Toolbox mapping and map saving with Nav2 Map Server</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack<span class="blink-underscore">_</span></h2>
+                <div class="about-flex">
+                    <ul class="skills-list">
+                        <li>Ubuntu 22.04</li>
+                        <li>ROS 2 Humble</li>
+                        <li>URDF / Xacro</li>
+                        <li>Gazebo Classic 11</li>
+                        <li>RViz2</li>
+                        <li>2D LiDAR</li>
+                        <li>SLAM Toolbox</li>
+                        <li>Nav2 Map Server</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="about-image-column" style="justify-self: end;">
+                        <div class="image-wrapper">
+                            <img src="../../assets/differentialDriveWorkflow.svg"
+                                alt="Robot simulation and mapping project components">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Resources<span class="blink-underscore">_</span></h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/akhilranand/ros2-slam-toolbox-mapping"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
+                    <a href="https://lnkd.in/p/gAGmHkF8"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">LinkedIn Post</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

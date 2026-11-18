@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhil R Anand | Robotics Engineer</title>
+    <title>Akhil R Anand | Robotics &amp; Automation Engineer</title>
+    <meta name="description" content="Akhil R Anand is a Robotics and Automation Engineer building projects with ROS 2, robot simulation, computer vision, and embedded systems.">
+    <meta name="theme-color" content="#07111b">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
 
     <nav>
         <div class="nav-container">
-            <div class="logo">ROBOTS<span class="blink-underscore">_</span></div>
+            <a href="#top" class="logo" aria-label="Akhil R Anand home">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
 
-            <div class="nav-menu">
+            <div class="nav-menu" id="primary-navigation">
                 <ul class="nav-links">
                     <li><a href="#about" title="Learn about me and my background"><span class="nav-num">1.</span>
                             About</a></li>
@@ -32,7 +33,7 @@
                     <li><a href="#contact" title="Get in touch with me"><span class="nav-num">6.</span> Contact</a></li>
                 </ul>
             </div>
-            <button class="hamburger" aria-label="Toggle navigation">
+            <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -41,31 +42,25 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="top">
         <div class="container hero-content">
-            <p class="mono-text">Building robots that perceive, decide, and act in the real world...</p>
+            <p class="mono-text">Robotics <span aria-hidden="true">·</span> ROS 2 <span aria-hidden="true">·</span> Autonomous Systems</p>
             <h1 class="hero-title">Akhil R Anand<span>.</span></h1>
-            <h2 class="hero-subtitle">Robotics Engineer</h2>
+            <h2 class="hero-subtitle">Robotics &amp; Automation Engineer</h2>
             <p class="hero-tagline">
-                Building the future of Autonomy.
+                I build robotic systems that bring together software, sensors, and the physical world.
             </p>
-       <div class="hero-action" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <div class="hero-action">
-        <a href="https://linkedin.com/in/akhil-r-anand" class="btn">LinkedIn</a>
-    </div>
-    <div class="hero-action">
-        <a href="https://github.com/akhilranand" class="btn">GitHub</a>
-    </div>
-    <div class="hero-action">
-        <a href="https://www.youtube.com/@Akhilomatic" class="btn">YouTube</a>
-    </div>
-</div>
-
-  <div class="hero-action">
-    <a href="#about" class="btn down-btn">↓</a>
-</div>
-
-
+            <p class="hero-meta">Kollam, Kerala <span aria-hidden="true">·</span> ROS 2 <span aria-hidden="true">·</span> Mobile Robotics</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="https://linkedin.com/in/akhil-r-anand" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/akhilranand" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.youtube.com/@Akhilomatic" class="btn" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+            <a href="#about" class="hero-scroll-link" aria-label="Scroll to About Me">
+                <span aria-hidden="true">↓</span>
+                <span>Scroll to explore</span>
+            </a>
         </div>
     </header>
 
@@ -75,23 +70,13 @@
                 <h2 class="section-heading">1. About Me<span class="blink-underscore">_</span></h2>
                 <div class="about-flex">
                     <div class="about-text">
-                        <!-- <p>Hi, I'm Akhil R Anand. I hold a B.Tech in <strong>Robotics and Automation</strong>. With
-                            professional experience in software development, I specialize in building autonomous systems
-                            using <strong>ROS 2, C++, and Python</strong>.</p> -->
-                        <p
-                            style="font-size: 1.1rem; line-height: 1.9; color: #ccd6f6; max-width: 850px; margin: 0 auto; text-align: left;">
-                            I’m <strong style="color: #64ffda;">Akhil R Anand</strong>, a <strong>Robotics and
-                                Automation Engineering graduate</strong> passionate about designing and building
-                            intelligent machines that interact with the real world.
+                        <p>
+                            I’m a Robotics and Automation Engineering graduate interested in building intelligent
+                            systems that interact with the real world. My projects span ROS 2, robot simulation,
+                            computer vision, embedded systems, and automation.
                             <br><br>
-                            My areas of interest include <strong>robotics, embedded systems, automation, computer
-                                vision, and ROS2</strong>. I enjoy developing projects that integrate <strong>hardware
-                                and software</strong> to create practical, efficient, and problem-solving robotic
-                            systems.
-                            <br><br>
-                            I’m focused on growing as a <strong style="color: #64ffda;">Robotics Engineer</strong> by
-                            building strong foundations in <strong>robot programming, perception, control systems, and
-                                autonomous technologies</strong>.
+                            I enjoy connecting software, sensors, and control to create practical robotic
+                            applications, and I’m continuing to grow my skills in autonomy and mobile robotics.
                         </p>
 
                     </div>
@@ -178,6 +163,73 @@
                                 <a href="html/projects/dinoGameAutomation.html" class="btn-outline">Explore Project</a>
                                 <a href="https://github.com/akhilranand/arduino-dino-game-automation"
                                     class="btn-outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card reveal linkedin-post-card">
+                        <div class="image-container">
+                            <img src="assets/cartographerThumbnail.svg"
+                                alt="Mobile robot building a glowing 2D map with LiDAR" class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <span class="tech-tag">ROS 2</span>
+                                <span class="tech-tag">Cartographer</span>
+                                <span class="tech-tag">LiDAR</span>
+                            </div>
+                            <h3>Google Cartographer 2D SLAM</h3>
+                            <p>Implemented 2D simultaneous localization and mapping with ROS 2 Humble, LiDAR,
+                                RViz2, TF frames, and occupancy grid map generation.</p>
+                            <div class="project-buttons">
+                                <a href="html/projects/slamUsingCartographer.html" class="btn-outline">Explore Page</a>
+                                <a href="https://github.com/akhilranand/slam_using_cartographer" target="_blank"
+                                    rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card reveal linkedin-post-card">
+                        <div class="image-container">
+                            <img src="assets/gestureTurtleThumbnail.svg"
+                                alt="Hand gesture controlling a simulated TurtleSim robot" class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <span class="tech-tag">ROS 2</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">MediaPipe</span>
+                            </div>
+                            <h3>Hand Gesture-Controlled Robot</h3>
+                            <p>Built a real-time hand gesture-controlled TurtleSim using OpenCV and MediaPipe
+                                to publish velocity commands through ROS 2.</p>
+                            <div class="project-buttons">
+                                <a href="html/projects/gestureControlTurtlesim.html" class="btn-outline">Explore Page</a>
+                                <a href="https://github.com/akhilranand/opencv-gesture-control-turtlesim-ros2"
+                                    target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card reveal linkedin-post-card">
+                        <div class="image-container">
+                            <img src="assets/differentialDriveThumbnail.svg"
+                                alt="Differential-drive robot exploring a Gazebo simulation with LiDAR"
+                                class="project-img">
+                        </div>
+                        <div class="card-content">
+                            <div class="tech-stack">
+                                <span class="tech-tag">ROS 2</span>
+                                <span class="tech-tag">Gazebo</span>
+                                <span class="tech-tag">SLAM Toolbox</span>
+                            </div>
+                            <h3>ROS 2 Mobile Robot Simulation Using SLAM Toolbox</h3>
+                            <p>Built and simulated a differential-drive robot with URDF/Xacro, Gazebo Classic,
+                                LiDAR, and SLAM Toolbox mapping.</p>
+                            <div class="project-buttons">
+                                <a href="html/projects/differentialDriveSimulation.html" class="btn-outline">Explore Page</a>
+                                <a href="https://github.com/akhilranand/ros2-slam-toolbox-mapping"
+                                    target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
                             </div>
                         </div>
                     </div>
@@ -278,6 +330,14 @@
             <div class="container">
                 <h2 class="section-heading">5. Education<span class="blink-underscore">_</span></h2>
                 <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-date">In Progress</div>
+                        <div class="education-details">
+                            <h3>PG Diploma in ROS2</h3>
+                            <h4>iHub School of Learning, Edappally, Kerala</h4>
+                            <p>Currently Pursuing</p>
+                        </div>
+                    </div>
                     <div class="education-item">
                         <div class="education-date">2024</div>
                         <div class="education-details">
