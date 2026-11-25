@@ -34,8 +34,8 @@
   <path d="M770 240l-31 57 31 17 31-17z" fill="#67e8f9"/>
   <circle cx="750" cy="309" r="6" fill="#edf7ff"/><circle cx="790" cy="309" r="6" fill="#edf7ff"/>
   <path d="M730 344q40 27 80 0" fill="none" stroke="#67e8f9" stroke-width="5" stroke-linecap="round"/>
-  <text x="500" y="505" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
-    font-size="35" font-weight="700" letter-spacing="3">GESTURE CONTROL</text>
+  <text x="500" y="500" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
+    font-size="30" font-weight="700" letter-spacing="3">HAND GESTURE-CONTROLLED</text>
   <text x="500" y="540" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace"
-    font-size="18" letter-spacing="4">OPENCV · MEDIAPIPE · ROS 2</text>
+    font-size="23" font-weight="700" letter-spacing="5">TURTLESIM · ROS 2</text>
 </svg>

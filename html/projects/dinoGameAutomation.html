@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Arduino Dino game automation project that reads an LDR on A0 and moves a servo when its light reading passes a threshold.">
     <title>Dino Game Bot - Akhil R Anand</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
@@ -12,73 +13,76 @@
         <div class="nav-container">
             <a class="logo" href="../../index.html">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
             <ul class="nav-links">
-                <li><a href="../../index.html#projects"><span class="nav-num">←</span>  Back</a></li>
+                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back to Projects</a></li>
             </ul>
         </div>
     </nav>
 
-  
-
     <header class="hero">
         <div class="container">
-            <p class="mono-text">Game Automation</p>
+            <p class="mono-text">Arduino · Sensor-Based Automation</p>
             <h1 class="hero-title">Dino<span>.</span><br>Game Bot</h1>
-            <h2 class="hero-subtitle">Hardware Automation</h2>
+            <h2 class="hero-subtitle">Light-Sensing Servo Control</h2>
             <p class="hero-tagline">
-                Physical automation of Chrome's offline Dino game using LDR sensors for obstacle detection and servo motors for jump mechanics.
+                An Arduino reads light levels from an LDR and moves a servo to press the Dino game's jump control when the reading passes a set threshold.
             </p>
-          <div class="hero-action">
-    <a href="#project-overView" class="btn down-btn">↓</a>
-</div>
+            <div class="hero-action">
+                <a href="#project-overview" class="btn down-btn" aria-label="Scroll to project overview">↓</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="reveal" id="project-overView">
-            <div class="container" >
-                <h2 class="section-heading">Project Overview</h2>
-                <p class="contact-desc" style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
-                    Hardware bot that plays Chrome Dino game autonomously. LDR sensors detect shadow of approaching cacti/birds, triggering physical servo press on spacebar.
+        <section class="reveal" id="project-overview">
+            <div class="container">
+                <h2 class="section-heading">Project Overview<span class="blink-underscore">_</span></h2>
+                <p class="contact-desc" style="text-align: center; max-width: 850px; margin: 0 auto;">
+                    The Arduino samples one LDR connected to analog input A0. When the reading exceeds the sketch's threshold
+                    of 22, a servo connected to pin 5 moves from 0° to 45° with a 100 ms pause at each position. This
+                    movement provides the physical jump action; the sketch also prints the sensor reading over serial.
                 </p>
                 <div style="text-align: center; margin-top: 40px;">
-                    <img src="../../assets/dinoGameAutomation.png" alt="Dino Bot Demo" style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
-                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">Obstacle shadow detected → LDR triggers → Servo jumps → Dino survives indefinitely</p>
-                       <div class="hero-action">
-                <a href="https://youtu.be/W2WVFwFFdfw?si=KuRfcFkdwu9B2KsP" class="btn">Live Demo On YouTube</a>
-            </div>
+                    <img src="../../assets/dinoGameAutomation.png" alt="Arduino-powered Dino game automation project"
+                        style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">
+                        LDR reading above 22 → Servo moves 0° → 45° → Jump action
+                    </p>
+                    <div class="hero-action">
+                        <a href="https://youtu.be/W2WVFwFFdfw?si=KuRfcFkdwu9B2KsP"
+                            target="_blank" rel="noopener noreferrer" class="btn">Watch Demo on YouTube</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="reveal">
             <div class="container">
-                <h2 class="section-heading">Key Features</h2>
-                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
-                    <li>2x LDR sensors for obstacle shadow detection</li>
-                    <li>High-torque servo for reliable spacebar press</li>
-                    <li>Real-time light intensity thresholding</li>
-                    <li>Configurable sensitivity via analog read</li>
-                    <li>Unlimited gameplay (perfect score)</li>
-                    <li>Compact 3D-printed enclosure</li>
+                <h2 class="section-heading">How It Works<span class="blink-underscore">_</span></h2>
+                <ul class="skills-list" style="max-width: 700px; margin: 0 auto;">
+                    <li>The LDR is read from analog input A0 on each loop.</li>
+                    <li>The sketch uses a fixed trigger threshold of 22.</li>
+                    <li>When the reading is above 22, the servo on pin 5 moves to 0° and then 45°.</li>
+                    <li>The servo pauses for 100 ms at each commanded position.</li>
+                    <li>LED outputs on pins 6 and 7 are set HIGH, and sensor readings are printed over serial.</li>
                 </ul>
             </div>
         </section>
 
         <section class="reveal">
             <div class="container">
-                <h2 class="section-heading">Tech Stack</h2>
+                <h2 class="section-heading">Components<span class="blink-underscore">_</span></h2>
                 <div class="about-flex">
                     <ul class="skills-list">
-                        <li>Arduino Nano</li>
-                        <li>2x Light Dependent Resistors (LDR)</li>
-                        <li>MG996R High-Torque Servo</li>
-                        <li>10kΩ Resistors (voltage divider)</li>
-                        <li>3D-printed mechanical linkage</li>
-                        <li>USB power from PC</li>
+                        <li>Arduino board</li>
+                        <li>Light-dependent resistor (LDR)</li>
+                        <li>Servo motor</li>
+                        <li>LEDs</li>
+                        <li>Jumper wires</li>
+                        <li>Power supply</li>
                     </ul>
                     <div class="about-image-column" style="justify-self: end;">
                         <div class="image-wrapper">
-                            <img src="../../assets/dinoGameAutomation.png" alt="Dino Bot Hardware">
+                            <img src="../../assets/dinoGameAutomation.png" alt="Dino game automation hardware">
                         </div>
                     </div>
                 </div>
@@ -87,16 +91,13 @@
 
         <section class="reveal">
             <div class="container">
-                <!-- <div style="text-align: center; max-width: 600px; margin: 0 auto;"> -->
-                    <h2 class="section-heading">Resources</h2>
-                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                        <!-- <a href="../../index.html#projects" class="btn">← Back to Projects</a> -->
-                        <a href="https://github.com/akhilranand/arduino-dino-game-automation" class="btn-outline">GitHub Repo</a>
-                        <a href="https://youtu.be/W2WVFwFFdfw?si=KuRfcFkdwu9B2KsP" class="btn-outline">YouTube</a>
-                        <!-- <a href="#" class="btn-outline">3D Models</a> -->
-                    </div>
-                    
-                <!-- </div> -->
+                <h2 class="section-heading">Resources<span class="blink-underscore">_</span></h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/akhilranand/arduino-dino-game-automation"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repository</a>
+                    <a href="https://youtu.be/W2WVFwFFdfw?si=KuRfcFkdwu9B2KsP"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">YouTube Demo</a>
+                </div>
             </div>
         </section>
     </main>

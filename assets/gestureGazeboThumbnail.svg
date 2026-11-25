@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Hand Gesture-Controlled Gazebo Robot</title>
+  <desc id="desc">A hand gesture sends ROS 2 velocity commands to a mobile robot in Gazebo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c3b"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <rect width="1000" height="600" fill="url(#grid)"/>
+  <path d="M250 315c-27-36-35-72-15-86 21-14 40 22 58 45l-1-110c0-25 34-28 37-2l8 79 3-99c1-26 36-26 37 1l2 95 8-76c3-25 36-21 36 5l-1 93 13-57c6-25 39-16 34 10l-18 105c-12 69-54 106-114 103-45-2-65-43-87-106z"
+    fill="#123545" stroke="#67e8f9" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M540 300c55-43 97-56 151-44" fill="none" stroke="#67e8f9" stroke-width="4"
+    stroke-dasharray="8 12" stroke-linecap="round"/>
+  <path d="M677 239l24 17-28 12" fill="#67e8f9"/>
+  <g transform="translate(720 238)">
+    <rect x="0" y="35" width="170" height="95" rx="18" fill="#071923" stroke="#67e8f9" stroke-width="4"/>
+    <rect x="45" y="0" width="80" height="55" rx="12" fill="#123545" stroke="#67e8f9" stroke-width="4"/>
+    <circle cx="35" cy="135" r="22" fill="#67e8f9"/><circle cx="135" cy="135" r="22" fill="#67e8f9"/>
+    <circle cx="35" cy="135" r="9" fill="#071923"/><circle cx="135" cy="135" r="9" fill="#071923"/>
+  </g>
+  <text x="500" y="500" text-anchor="middle" fill="#edf7ff" font-family="Inter,Arial,sans-serif"
+    font-size="30" font-weight="700" letter-spacing="3">HAND GESTURE-CONTROLLED</text>
+  <text x="500" y="540" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace"
+    font-size="23" font-weight="700" letter-spacing="5">GAZEBO ROBOT · ROS 2</text>
+</svg>

@@ -19,7 +19,7 @@
   </defs>
   <rect width="1000" height="420" rx="24" fill="url(#background)"/>
   <rect width="1000" height="420" rx="24" fill="url(#grid)"/>
-  <text x="54" y="58" fill="#edf7ff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Gesture Control Pipeline</text>
+  <text x="54" y="58" fill="#edf7ff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Gesture-Controlled TurtleSim Pipeline</text>
   <text x="54" y="88" fill="#aac4d4" font-family="JetBrains Mono,monospace" font-size="14">COMPUTER VISION · ROS 2 · TURTLESIM</text>
 
   <g font-family="Inter,Arial,sans-serif" text-anchor="middle">

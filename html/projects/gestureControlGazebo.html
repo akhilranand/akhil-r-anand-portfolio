@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akhil R Anand's ROS 2 Gazebo mobile robot controlled by hand gestures using OpenCV.">
+    <title>Gesture-Controlled Gazebo Robot - Akhil R Anand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a class="logo" href="../../index.html">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back to Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="mono-text">Computer Vision · Human-Robot Interaction · Simulation</p>
+            <h1 class="hero-title">Gesture-Controlled Gazebo Robot<span>.</span></h1>
+            <h2 class="hero-subtitle">Vision-Based Mobile Robot Control with ROS 2</h2>
+            <p class="hero-tagline">
+                Control a simulated mobile robot through real-time hand gestures captured by a webcam.
+            </p>
+            <div class="hero-action">
+                <a href="#project-overview" class="btn down-btn" aria-label="Scroll to project overview">↓</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal" id="project-overview">
+            <div class="container">
+                <h2 class="section-heading">Project Overview<span class="blink-underscore">_</span></h2>
+                <p class="contact-desc" style="text-align: center; max-width: 850px; margin: 0 auto;">
+                    This project uses a webcam and OpenCV to recognize hand gestures and translate them into
+                    robot movement commands. The recognized gestures are mapped to velocity commands published
+                    through ROS 2 and used to control a mobile robot inside the Gazebo simulation environment.
+                </p>
+                <div style="text-align: center; margin-top: 40px;">
+                    <img src="../../assets/gestureGazeboWorkflow.svg"
+                        alt="Webcam hand gestures are processed by OpenCV, converted to ROS 2 velocity commands, and sent to a Gazebo robot."
+                        style="max-width: 850px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">
+                        Webcam → OpenCV → Gesture mapping → ROS 2 /cmd_vel → Gazebo
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Key Features<span class="blink-underscore">_</span></h2>
+                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>Real-time camera input using OpenCV</li>
+                    <li>Hand gesture detection and recognition</li>
+                    <li>Gesture-to-motion command mapping</li>
+                    <li>ROS 2 velocity command publishing</li>
+                    <li>Differential mobile robot control in Gazebo</li>
+                    <li>Hands-free human-robot interaction</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Tech Stack<span class="blink-underscore">_</span></h2>
+                <div class="about-flex">
+                    <ul class="skills-list">
+                        <li>Ubuntu 22.04</li>
+                        <li>ROS 2 Humble</li>
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                        <li>Gazebo</li>
+                        <li>geometry_msgs/Twist</li>
+                        <li>Webcam</li>
+                    </ul>
+                    <div class="about-image-column" style="justify-self: end;">
+                        <div class="image-wrapper">
+                            <img src="../../assets/gestureGazeboWorkflow.svg"
+                                alt="Gesture-controlled Gazebo robot project components">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="container">
+                <h2 class="section-heading">Resources<span class="blink-underscore">_</span></h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/akhilranand/opencv-gesture-control-gazebo-robot"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Akhil R Anand &copy; 2026</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

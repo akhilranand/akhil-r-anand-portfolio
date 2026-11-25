@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Arduino touchless sanitizer dispenser that detects a nearby hand with an ultrasonic sensor and briefly activates a motor.">
     <title>Touchless Sanitizer System - Akhil R Anand</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
@@ -12,77 +13,72 @@
         <div class="nav-container">
             <a class="logo" href="../../index.html">AKHIL R ANAND<span class="brand-mark" aria-hidden="true">/</span></a>
             <ul class="nav-links">
-                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back</a></li>
+                <li><a href="../../index.html#projects"><span class="nav-num">←</span> Back to Projects</a></li>
             </ul>
         </div>
     </nav>
 
-   
-
     <header class="hero">
         <div class="container">
-            <p class="mono-text">Hygiene Automation</p>
+            <p class="mono-text">Arduino · Sensor-Based Automation</p>
             <h1 class="hero-title">Touchless<span>.</span><br>Sanitizer System</h1>
-            <h2 class="hero-subtitle">Zero-Contact Dispensing</h2>
+            <h2 class="hero-subtitle">Ultrasonic Detection with Motor Control</h2>
             <p class="hero-tagline">
-                Automated hand sanitizer dispenser using ultrasonic distance sensing and precise motor control for touch-free operation.
+                An Arduino-based dispenser that detects a nearby hand and briefly activates a motor for touch-free dispensing.
             </p>
             <div class="hero-action">
-                <!-- <a href="https://youtu.be/DfhfQs4atdA?si=TtjJWzPjW6AfhEqq" class="btn">Live Demo On YouTube</a> -->
+                <a href="#project-overview" class="btn down-btn" aria-label="Scroll to project overview">↓</a>
             </div>
-             <div class="hero-action">
-    <a href="#project-overView" class="btn down-btn">↓</a>
-</div>
         </div>
     </header>
 
     <main>
-        <section class="reveal" id="project-overView">
+        <section class="reveal" id="project-overview">
             <div class="container">
-                <h2 class="section-heading">Project Overview</h2>
-                <p class="contact-desc" style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
-                    Developed during COVID-19 to provide reliable touchless sanitization. Detects hand proximity and dispenses exact sanitizer amount using servo-controlled pump.
+                <h2 class="section-heading">Project Overview<span class="blink-underscore">_</span></h2>
+                <p class="contact-desc" style="text-align: center; max-width: 850px; margin: 0 auto;">
+                    The Arduino sends a trigger pulse to an ultrasonic sensor and measures the returning echo to estimate distance.
+                    When an object is detected closer than 10 cm, the controller switches on the motor for 600 ms, then waits
+                    2 seconds before checking for another dispense.
                 </p>
                 <div style="text-align: center; margin-top: 40px;">
-                    <img src="../../assets/automaticHandSanitizerDispencer.png" alt="Sanitizer Demo" style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
-                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">Hand approaches → Ultrasonic trigger → Servo dispenses → Ready for next use</p>
-
-                     <div class="hero-action">
-                <a href="https://youtu.be/DfhfQs4atdA?si=TtjJWzPjW6AfhEqq" class="btn">Live Demo On YouTube</a>
-            </div>
+                    <img src="../../assets/automaticHandSanitizerDispencer.png"
+                        alt="Touchless sanitizer dispenser project"
+                        style="max-width: 800px; border-radius: 8px; box-shadow: 0 20px 40px rgba(100,255,218,0.2);">
+                    <p style="color: var(--text-dim); margin-top: 20px; font-family: var(--font-mono);">
+                        Hand detected under 10 cm → Motor runs for 600 ms → 2-second pause
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="reveal">
             <div class="container">
-                <h2 class="section-heading">Key Features</h2>
-                <ul class="skills-list" style="max-width: 600px; margin: 0 auto;">
-                    <li>Ultrasonic sensor (HC-SR04) for 5-20cm hand detection</li>
-                    <li>Precise servo motor (SG90) pump control</li>
-                    <li>Adjustable dispense volume via potentiometer</li>
-                    <li>Low sanitizer level indicator with buzzer</li>
-                    <li>Battery-powered portable design</li>
-                    <li>Zero-touch operation (<1s response)</li>
+                <h2 class="section-heading">How It Works<span class="blink-underscore">_</span></h2>
+                <ul class="skills-list" style="max-width: 700px; margin: 0 auto;">
+                    <li>The ultrasonic sensor uses trigger pin 3 and echo pin 2.</li>
+                    <li>The Arduino calculates distance from the returning echo.</li>
+                    <li>At less than 10 cm, digital pin 4 switches the motor on.</li>
+                    <li>The motor runs for 600 ms, followed by a 2-second pause.</li>
+                    <li>For a computed distance of 10 cm or more, the motor remains off.</li>
                 </ul>
             </div>
         </section>
 
         <section class="reveal">
             <div class="container">
-                <h2 class="section-heading">Tech Stack</h2>
+                <h2 class="section-heading">Components<span class="blink-underscore">_</span></h2>
                 <div class="about-flex">
                     <ul class="skills-list">
-                        <li>Arduino Uno R3</li>
-                        <li>HC-SR04 Ultrasonic Sensor</li>
-                        <li>SG90 Micro Servo</li>
-                        <li>10kΩ Potentiometer</li>
-                        <li>Active Buzzer</li>
-                        <li>9V Battery + Voltage Regulator</li>
+                        <li>Arduino board</li>
+                        <li>Ultrasonic distance sensor</li>
+                        <li>Motor or pump</li>
+                        <li>Jumper wires</li>
+                        <li>Power supply</li>
                     </ul>
                     <div class="about-image-column" style="justify-self: end;">
                         <div class="image-wrapper">
-                            <img src="../../assets/automaticHandSanitizerDispencer.png" alt="Sanitizer Hardware">
+                            <img src="../../assets/automaticHandSanitizerDispencer.png" alt="Sanitizer dispenser hardware">
                         </div>
                     </div>
                 </div>
@@ -91,18 +87,14 @@
 
         <section class="reveal">
             <div class="container">
-                <!-- <div style="text-align: center; max-width: 600px; margin: 0 auto;"> -->
-                    <h2 class="section-heading">Resources</h2>
-                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                        <!-- <a href="../../index.html#projects" class="btn">← Back to Projects</a> -->
-                        <a href="https://github.com/akhilranand/automatic-hand-sanitizer-dispenser" class="btn-outline">GitHub Repo</a>
-                         <div class="hero-action">
-                        <a href="https://youtu.be/DfhfQs4atdA?si=TtjJWzPjW6AfhEqq" class="btn-outline">YouTube</a>
-                         </div>
-                        <!-- <a href="#" class="btn-outline">Schematic PDF</a> -->
-                    </div> 
+                <h2 class="section-heading">Resources<span class="blink-underscore">_</span></h2>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/akhilranand/automatic-hand-sanitizer-dispenser"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repository</a>
+                    <a href="https://youtu.be/DfhfQs4atdA?si=TtjJWzPjW6AfhEqq"
+                        target="_blank" rel="noopener noreferrer" class="btn-outline">YouTube Demo</a>
                 </div>
-            <!-- </div> -->
+            </div>
         </section>
     </main>
 

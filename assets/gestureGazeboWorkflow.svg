@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Gesture-controlled Gazebo robot workflow</title>
+  <desc id="desc">Webcam hand gestures are processed with OpenCV, converted to ROS 2 velocity commands, and sent to a mobile robot in Gazebo.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c3b"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="420" rx="24" fill="url(#background)"/>
+  <text x="54" y="58" fill="#edf7ff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Gesture-Controlled Gazebo Robot</text>
+  <text x="54" y="88" fill="#aac4d4" font-family="JetBrains Mono,monospace" font-size="14">COMPUTER VISION · ROS 2 · GAZEBO</text>
+  <g font-family="Inter,Arial,sans-serif" text-anchor="middle">
+    <rect x="50" y="145" width="180" height="120" rx="16" fill="#123545" stroke="#67e8f9" stroke-width="3"/>
+    <text x="140" y="198" fill="#edf7ff" font-size="22" font-weight="700">WEBCAM</text>
+    <text x="140" y="232" fill="#aac4d4" font-size="14">Live hand capture</text>
+    <rect x="290" y="145" width="180" height="120" rx="16" fill="#123545" stroke="#67e8f9" stroke-width="3"/>
+    <text x="380" y="198" fill="#edf7ff" font-size="22" font-weight="700">OPENCV</text>
+    <text x="380" y="232" fill="#aac4d4" font-size="14">Gesture recognition</text>
+    <rect x="530" y="145" width="180" height="120" rx="16" fill="#123545" stroke="#67e8f9" stroke-width="3"/>
+    <text x="620" y="198" fill="#edf7ff" font-size="22" font-weight="700">ROS 2</text>
+    <text x="620" y="232" fill="#aac4d4" font-size="14">Velocity commands</text>
+    <rect x="770" y="145" width="180" height="120" rx="16" fill="#123545" stroke="#67e8f9" stroke-width="3"/>
+    <text x="860" y="198" fill="#edf7ff" font-size="22" font-weight="700">GAZEBO</text>
+    <text x="860" y="232" fill="#aac4d4" font-size="14">Mobile robot</text>
+  </g>
+  <g stroke="#67e8f9" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M230 205h60"/><path d="M470 205h60"/><path d="M710 205h60"/>
+  </g>
+  <text x="500" y="335" text-anchor="middle" fill="#67e8f9" font-family="JetBrains Mono,monospace" font-size="16">WEBCAM → OPENCV → GESTURE MAPPING → /cmd_vel → GAZEBO</text>
+</svg>
